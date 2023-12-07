@@ -1,27 +1,40 @@
-import Welcome from "./components/Welcome";
-import LuxunForum from "./components/LuxunForum";
-import MacauBlock from "./components/MacauBlock";
-import Nothing from "./components/Nothing";
-import DogeWiki from "./components/DogeWiki";
+import Home from './pages/Home'
+import Resume from './pages/Resume';
+import Gallery from './pages/Gallery';
+import NoMatch from './pages/NoMatch';
+import ReactPost from './pages/posts/ReactPost'
+import TailwindPost from './pages/posts/TailwindPost'
+import LuxunPost from './pages/posts/LuxunPost'
+import Header from './layout/Header';
+import NavigateBar from './layout/NavigateBar';
+
+import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="bg-black select-none text-white relative">
-      <Welcome />
-      <div className="absolute z-10 w-full bg-black">
-        <div className="font-['chFont'] animate-bounce text-2xl font-bold h-[20vh] flex items-center justify-center">
-          Scroll Down ↓↓↓
+    return (
+        <div className="flex font-[chFont] text-wLight relative selection:bg-brand selection:text-bDark">
+            <NavigateBar />
+            <main className="bg-bLight flex-1">
+                <Header />
+                <Routes>
+                    <Route path='/Personal_page'>
+                        <Route index element={<Home />} />
+                        <Route path='resume' element={<Resume />} />
+                        <Route path='gallery' element={<Gallery />} />
+                        <Route path='post'>
+                            <Route index element={<Navigate to='/nomatch' replace />} />
+                            <Route path='react' element={<ReactPost />} />
+                            <Route path='tailwind' element={<TailwindPost />} />
+                            <Route path='luxun' element={<LuxunPost />} />
+                            <Route path='*' element={<Navigate to='/nomatch' replace />} />
+                        </Route>
+                        <Route path='nomatch' element={<NoMatch />} />
+                        <Route path='*' element={<Navigate to='nomatch' replace />} />
+                    </Route>
+                </Routes>
+            </main>
         </div>
-
-        <div className="bg-black mt-[20vh]">
-          <DogeWiki />
-          <LuxunForum />
-          <MacauBlock />
-          <Nothing />
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default App;
