@@ -37,7 +37,7 @@ function Description() {
 function Btn() {
     const navigate = useNavigate()
     return (
-        <div className="text-end mt-8 transition ease-in-out " onClick={() => navigate('/personal_page/gallery')}>
+        <div className="text-end mt-8 transition ease-in-out " onClick={() => navigate('gallery')}>
             <span className="border border-brand text-brand rounded py-3 px-6 hover:bg-brand hover:text-bLight">
                 查看相册
             </span>

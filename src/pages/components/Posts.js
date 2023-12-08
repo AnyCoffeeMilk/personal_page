@@ -1,24 +1,26 @@
+import { Link } from "react-router-dom"
+
 const postsData = [
     {
         title: "ReactJS — 让你爱上模块化编程",
         tags: ['ReactJS', '网页开发', '科普'],
         text: "ReactJS是一个自由及开放源代码的前端JavaScript工具库，用于基于...",
         img: "/personal_page/react_img.png",
-        page: "/personal_page/react"
+        page: "react"
     },
     {
         title: "Tailwind — 让你从想名字中解放",
         tags: ['TailwindCSS', '网页开发', '科普'],
         text: "Tailwind CSS是一个开放源代码CSS框架。这个工具库的主要特点是，...",
         img: "/personal_page/tailwind_img.jpg",
-        page: "/personal_page/tailwind"
+        page: "tailwind"
     },
     {
         title: "关于鲁迅先生没说过的那些话",
         text: "鲁迅:这话我真没说过... \"网上95%的名人名言都是瞎掰，包括这句。...",
         tags: ['鲁迅', '科普', '闲聊'],
         img: "/personal_page/luxun_img.jpg",
-        page: "/personal_page/luxun"
+        page: "luxun"
     }
 ]
 
@@ -55,11 +57,11 @@ function Tags({ texts }) {
 function Btn({ url }) {
     const style = 'border whitespace-nowrap border-brand text-brand rounded py-3 px-6 hover:bg-brand hover:text-bLight'
     return (
-        <div className="md:mb-2.5 md:mt-auto my-6 transition w-[110px] ease-in-out">
-            <a href={url} className={style}>
+        <Link to={url} className="md:mb-2.5 md:mt-auto my-6 transition w-[110px] ease-in-out cursor-pointer">
+            <div className={style}>
                 进入专栏
-            </a>
-        </div>
+            </div>
+        </Link>
     )
 }
 

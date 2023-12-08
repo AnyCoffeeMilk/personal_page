@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Icon() {
     const handleClick = () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
@@ -30,6 +30,7 @@ const sections = ['关于', '家乡', '专栏', '联络']
 
 function NavigateBar({ onClick }) {
     const [currentSection, setCurrentSection] = useState(0)
+    const { pathname } = useLocation();
     const navigate = useNavigate();
     
     useEffect(() => {
@@ -39,10 +40,9 @@ function NavigateBar({ onClick }) {
     }, [])
 
     const handleLinkMap = () => {
-        const path = window.location.pathname
-        if (path !== '/personal_page' && path !== '/personal_page/') return (
+        if (pathname !== '/') return (
             <Link text="返回" active={true} onClick={() => {
-                if (path === '/personal_page/nomatch') navigate('/personal_page')
+                if (pathname === '/nomatch') navigate('/')
                 else navigate(-1)
             }}/>
         )
