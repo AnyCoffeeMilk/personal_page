@@ -67,9 +67,9 @@ function TagSection({ title, tags, Icon }) {
 const knowMore = ['HTML', 'CSS', 'JavaScript', 'Kotlin', 'ReactJS', 'Tailwind', 'ReactNative']
 const knowLess = ['Python', 'Java', 'PHP', 'Nextjs', 'MySQL', 'VueJS']
 
-function About() {
+function About({ innerRef }) {
     return (
-        <section className="lg:px-[10%] px-8 mx-auto max-w-[1300px]">
+        <section ref={innerRef} className="lg:px-[10%] px-8 mx-auto max-w-[1300px]">
             <Title />
             <div className="md:flex md:space-x-8">
                 <div className="text-lg">

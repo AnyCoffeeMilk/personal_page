@@ -45,13 +45,13 @@ function Btn() {
     )
 }
 
-function Hometown() {
+function Hometown({ innerRef }) {
     return (
-        <section className="h-screen lg:px-[10%] px-8 mx-auto max-w-[1300px]">
+        <section ref={innerRef} className="lg:px-[10%] px-8 mx-auto max-w-[1300px]">
             <Title />
-            <div className="flex space-x-8">
+            <div className="md:flex md:space-x-8">
                 <Image />
-                <div className="text-lg max-w-[33%]">
+                <div className="text-lg md:max-w-[33%] md:mt-0 mt-8">
                     <Description />
                     <Btn />
                 </div>

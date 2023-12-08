@@ -8,10 +8,10 @@ function Title() {
     )
 }
 
-function Contact() {
+function Contact({ innerRef }) {
     const mailbox = 'this.isfake@fakemail.com'
     return (
-        <section className="h-screen flex flex-col justify-center items-center px-[9.6em] mx-auto max-w-[1300px]">
+        <section ref={innerRef} className="h-screen flex flex-col justify-center items-center px-[9.6em] mx-auto max-w-[1300px]">
             <Title />
             <div className="text-wDark text-lg py-8">
                 我当然不会留真的联络方式，哈哈(๑¯∀¯๑)

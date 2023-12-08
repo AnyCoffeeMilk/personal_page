@@ -28,7 +28,7 @@ function Link({ text, onClick, active }) {
 
 const sections = ['关于', '家乡', '专栏', '联络']
 
-function NavigateBar() {
+function NavigateBar({ onClick }) {
     const [currentSection, setCurrentSection] = useState(0)
     const navigate = useNavigate();
     
@@ -40,8 +40,7 @@ function NavigateBar() {
 
     const handleLinkMap = () => {
         const path = window.location.pathname
-        console.log(path !== '/Personal_page' && path !== '/Personal_page/', path)
-        if (path !== '/Personal_page' || path !== '/Personal_page/') return (
+        if (path !== '/Personal_page' && path !== '/Personal_page/') return (
             <Link text="返回" active={true} onClick={() => {
                 if (path === '/Personal_page/nomatch') navigate('/Personal_page')
                 else navigate(-1)
@@ -50,7 +49,7 @@ function NavigateBar() {
         return sections.map((text, i) => (
             <Link key={i} text={text} 
                 active={currentSection === i + 1} 
-                onClick={() => window.scrollTo({ top: window.innerHeight * (i + 1), behavior: 'smooth' })}
+                onClick={() => onClick(i+1)}
             />
         )
     )}
