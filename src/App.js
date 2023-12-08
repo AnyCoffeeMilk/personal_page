@@ -30,7 +30,7 @@ function App() {
             <main className="bg-bLight flex-1">
                 <Header />
                 <Routes>
-                    <Route path='/Personal_page'>
+                    <Route path='/personal_page'>
                         <Route index element={
                             <Home 
                                 ref_about={ref_about}

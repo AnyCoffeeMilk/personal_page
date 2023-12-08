@@ -35,7 +35,7 @@ function Description() {
 function Btn() {
     const navigate = useNavigate();
     return (
-        <div className='my-8 transition ease-in-out text-brand' onClick={() => navigate('/Personal_page/resume')}>
+        <div className='my-8 transition ease-in-out text-brand' onClick={() => navigate('/personal_page/resume')}>
             <span className="border border-brand rounded py-3 px-6 hover:bg-brand hover:text-bLight">
                 查看简历
             </span>

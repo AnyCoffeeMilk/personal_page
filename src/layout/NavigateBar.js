@@ -40,9 +40,9 @@ function NavigateBar({ onClick }) {
 
     const handleLinkMap = () => {
         const path = window.location.pathname
-        if (path !== '/Personal_page' && path !== '/Personal_page/') return (
+        if (path !== '/personal_page' && path !== '/personal_page/') return (
             <Link text="返回" active={true} onClick={() => {
-                if (path === '/Personal_page/nomatch') navigate('/Personal_page')
+                if (path === '/personal_page/nomatch') navigate('/personal_page')
                 else navigate(-1)
             }}/>
         )

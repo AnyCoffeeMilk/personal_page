@@ -33,7 +33,7 @@ function Description() {
 function Image() {
 	return (
 		<div className="bg-gDark lg:mt-0 mt-4 rounded min-w-[400px] lg:max-h-[250px] overflow-hidden">
-			<img className="h-full w-full object-cover" src="/Personal_page/posts/luxun1.jpg" alt="macau view" />
+			<img className="h-full w-full object-cover" src="/personal_page/posts/luxun1.jpg" alt="macau view" />
 		</div>
 	)
 }

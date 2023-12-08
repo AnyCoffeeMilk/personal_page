@@ -12,7 +12,7 @@ function Title() {
 function Image() {
     return (
         <div className="bg-gDark rounded flex-1 h-[55vh] overflow-hidden">
-            <img className="h-full object-cover" src="/Personal_page/macau_img.jpg" alt="macau view" />
+            <img className="h-full object-cover" src="/personal_page/macau_img.jpg" alt="macau view" />
         </div>
     )
 }
@@ -37,7 +37,7 @@ function Description() {
 function Btn() {
     const navigate = useNavigate()
     return (
-        <div className="text-end mt-8 transition ease-in-out " onClick={() => navigate('/Personal_page/gallery')}>
+        <div className="text-end mt-8 transition ease-in-out " onClick={() => navigate('/personal_page/gallery')}>
             <span className="border border-brand text-brand rounded py-3 px-6 hover:bg-brand hover:text-bLight">
                 查看相册
             </span>

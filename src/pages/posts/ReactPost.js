@@ -39,7 +39,7 @@ function Description() {
 function Image() {
 	return (
 		<div className="bg-gDark rounded py-4 flex-1 w-[35vh] h-[35vh] overflow-hidden">
-			<img className="h-full object-cover" src="/Personal_page/posts/react1.png" alt="macau view" />
+			<img className="h-full object-cover" src="/personal_page/posts/react1.png" alt="macau view" />
 		</div>
 	)
 }

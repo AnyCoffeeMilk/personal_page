@@ -38,7 +38,7 @@ function Description() {
 function Image() {
 	return (
 		<div className="bg-gDark rounded flex-1 mt-2 w-[35vh] h-[32vh] overflow-hidden">
-			<img className="h-full object-cover" src="/Personal_page/posts/tailwind1.jpg" alt="macau view" />
+			<img className="h-full object-cover" src="/personal_page/posts/tailwind1.jpg" alt="macau view" />
 		</div>
 	)
 }

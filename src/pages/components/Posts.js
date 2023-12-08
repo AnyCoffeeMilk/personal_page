@@ -3,22 +3,22 @@ const postsData = [
         title: "ReactJS — 让你爱上模块化编程",
         tags: ['ReactJS', '网页开发', '科普'],
         text: "ReactJS是一个自由及开放源代码的前端JavaScript工具库，用于基于...",
-        img: "/Personal_page/react_img.png",
-        page: "/Personal_page/react"
+        img: "/personal_page/react_img.png",
+        page: "/personal_page/react"
     },
     {
         title: "Tailwind — 让你从想名字中解放",
         tags: ['TailwindCSS', '网页开发', '科普'],
         text: "Tailwind CSS是一个开放源代码CSS框架。这个工具库的主要特点是，...",
-        img: "/Personal_page/tailwind_img.jpg",
-        page: "/Personal_page/tailwind"
+        img: "/personal_page/tailwind_img.jpg",
+        page: "/personal_page/tailwind"
     },
     {
         title: "关于鲁迅先生没说过的那些话",
         text: "鲁迅:这话我真没说过... \"网上95%的名人名言都是瞎掰，包括这句。...",
         tags: ['鲁迅', '科普', '闲聊'],
-        img: "/Personal_page/luxun_img.jpg",
-        page: "/Personal_page/luxun"
+        img: "/personal_page/luxun_img.jpg",
+        page: "/personal_page/luxun"
     }
 ]
 
