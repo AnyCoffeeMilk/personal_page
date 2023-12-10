@@ -40,7 +40,7 @@ function Description() {
 function Image() {
 	return (
 		<div className="bg-gDark rounded flex-1 mx-auto lg:mt-0 mt-4 lg:min-w-[300px] max-w-[300px] max-h-[400px] overflow-hidden">
-			<img className="h-full w-full object-cover" src="/Personal_page/resume_img.jfif" alt="macau view" />
+			<img className="h-full w-full object-cover" src="/personal_page/resume_img.jfif" alt="macau view" />
 		</div>
 	)
 }
