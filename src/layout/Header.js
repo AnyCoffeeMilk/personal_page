@@ -14,6 +14,12 @@ function Header() {
             <a className="text-wDark hover:text-brand transition ease-in-out" href="https://gitee.com/AnyCoffeeMilk">
                 <GiteeSvg />
             </a>
+            <a className="text-wDark hover:text-brand transition ease-in-out" href="https://anycoffeemilk.github.io/room_page/">
+                回到613宿舍
+            </a>
+            <a className="text-wDark hover:text-brand transition ease-in-out" href="https://anycoffeemilk.github.io/class_page/">
+                回到2310班
+            </a>
         </header>
     )
 }
