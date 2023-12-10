@@ -36,7 +36,7 @@ function Btn() {
     const navigate = useNavigate();
     return (
         <div className='my-8 transition ease-in-out text-brand' onClick={() => navigate('resume')}>
-            <span className="border border-brand rounded py-3 px-6 hover:bg-brand hover:text-bLight">
+            <span className="border border-brand cursor-pointer rounded py-3 px-6 hover:bg-brand hover:text-bLight">
                 查看简历
             </span>
         </div>
