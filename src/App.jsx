@@ -45,7 +45,7 @@ export default function App() {
             <NavigateBar sectionPos={sectionPos} onClick={handleNavClick} />
             <main className="bg-bLight flex-1">
                 <Header />
-                <Routes path='/'>
+                <Routes path='/personal_page'>
                     <Route index element={
                         <Home 
                             ref_about={ref_about}

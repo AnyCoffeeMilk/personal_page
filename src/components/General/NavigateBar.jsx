@@ -1,15 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useLocation } from "react-router-dom";
 import LinkBtn from "./NavigateBar/LinkBtn";
-
-function Icon() {
-    const handleClick = () => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
-    return (
-        <div onClick={handleClick} className="font-extrabold text-center py-2 px-4 md:px-2 md:py-7 cursor-pointer">
-            <span className="text-brand">&lt;</span>IKL<span className="text-brand">/&gt;</span>
-        </div>
-    )
-}
+import IconBtn from "./NavigateBar/IconBtn";
 
 const sections = ['关于', '家乡', '专栏', '联络']
 
@@ -52,7 +44,7 @@ function NavigateBar({ sectionPos, onClick }) {
     return (
         <nav className="fixed z-10 w-full bottom-0 md:w-auto md:sticky md:top-0 md:h-screen">
             <div className="bg-bDark flex md:h-full md:block text-lg select-none">
-                <Icon />
+                <IconBtn />
                 {mapLinks}
             </div>
         </nav>

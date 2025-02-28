@@ -1,6 +1,6 @@
 # This is the source code of my personal page
 
-The page is deployed at [https://anycoffeemilk.github.io/](https://anycoffeemilk.github.io/)
+The page is deployed at [https://anycoffeemilk.github.io/personal_page/](https://anycoffeemilk.github.io/personal_page/)
 
 ## Setup Development Environment
 
